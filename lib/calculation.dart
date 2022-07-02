@@ -51,7 +51,7 @@ class _CalculationState extends State<Calculation> {
             _getButton(
                 onTap: () => operatorPressed("x"),
                 text: 'x',
-                backgroundColor: Colors.grey),
+                backgroundColor: const Color.fromRGBO(220, 220, 220, 1)),
           ],
         ),
         Row(
@@ -151,7 +151,7 @@ class _CalculationState extends State<Calculation> {
       backgroundColor: backgroundColor,
       label: text,
       onTap: onTap,
-      labelColors: Colors.black,
+      labelColors: textColor,
       size: width / 4 - 12,
     );
   }
